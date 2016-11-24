@@ -119,8 +119,8 @@ private:
 };
 
 #ifndef _DEBUG  // debug version in TestGLView.cpp
-inline CTestGLDoc* CTestGLView::GetDocument()
-   { return (CTestGLDoc*)m_pDocument; }
+//inline CTestGLDoc* CTestGLView::GetDocument()
+//   { return (CTestGLDoc*)m_pDocument; }
 #endif
 
 /////////////////////////////////////////////////////////////////////////////
