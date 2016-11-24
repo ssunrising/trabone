@@ -1,0 +1,631 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Chinese (P.R.C.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 9, 1\r\n"
+    "#pragma code_page(1252)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\Display.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""afxres.rc""         // Standard components\r\n"
+    "#include ""afxprint.rc""       // printing/print preview resources\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_FORM_COMMAND DIALOGEX 0, 0, 142, 456
+STYLE DS_MODALFRAME | WS_CHILD
+FONT 10, "System", 0, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "Load Image",IDC_LOAD,20,24,100,14,0,WS_EX_CLIENTEDGE
+    DEFPUSHBUTTON   "Begin Thinning ",IDC_THINNING,20,44,100,14,0,
+                    WS_EX_CLIENTEDGE
+    DEFPUSHBUTTON   "Begin Classification",IDC_CLASSIFY,20,64,100,14,0,
+                    WS_EX_CLIENTEDGE
+    DEFPUSHBUTTON   "Save Skeleton Model",IDC_RECORD_CLASSIFY,20,124,100,14,
+                    0,WS_EX_CLIENTEDGE
+    LTEXT           "Static",IDC_DISPLAYSIZE,23,383,95,18
+    LTEXT           "Static",IDC_DISPLAY,24,407,97,14
+    DEFPUSHBUTTON   "Display",IDOK,23,438,38,12,0,WS_EX_CLIENTEDGE
+    DEFPUSHBUTTON   "Clear",IDCANCEL,81,438,38,12,0,WS_EX_CLIENTEDGE
+    DEFPUSHBUTTON   "Begin Arc Thinning",IDC_ARCTHINNING,20,84,100,14,0,
+                    WS_EX_CLIENTEDGE
+    DEFPUSHBUTTON   "Debug_Primary Thinning",IDC_PRIMARY,22,245,100,14,0,
+                    WS_EX_CLIENTEDGE
+    DEFPUSHBUTTON   "Debug_Final Thinning",IDC_FINAL,22,262,100,14,0,
+                    WS_EX_CLIENTEDGE
+    GROUPBOX        "Debug",IDC_STATIC,13,216,116,98
+    DEFPUSHBUTTON   "Start Debug",IDC_DEBUGSTART,22,227,47,14,0,
+                    WS_EX_CLIENTEDGE
+    DEFPUSHBUTTON   "End Debug",IDC_DEBUGEND,75,227,47,14,0,WS_EX_CLIENTEDGE
+    LTEXT           "Static",IDC_STATIC_DEBUG,22,354,113,28
+    DEFPUSHBUTTON   "Cluster",IDC_CLUSTER,23,423,38,12,0,WS_EX_CLIENTEDGE
+    DEFPUSHBUTTON   "Recover Full Model",IDC_RECOVER,21,157,100,14,0,
+                    WS_EX_CLIENTEDGE
+    DEFPUSHBUTTON   "Recover Plate",IDC_RECOVER2,21,177,100,14,0,
+                    WS_EX_CLIENTEDGE
+    DEFPUSHBUTTON   "Recover Rod",IDC_RECOVER3,21,197,100,14,0,
+                    WS_EX_CLIENTEDGE
+    GROUPBOX        "Skeletonization",IDC_STATIC,13,13,116,129
+    GROUPBOX        "Recover",IDC_STATIC,14,145,114,70
+    DEFPUSHBUTTON   "PlateCluster",IDC_PLATECLUSTER,81,423,38,12,0,
+                    WS_EX_CLIENTEDGE
+    DEFPUSHBUTTON   "Arc Classification",IDC_ARC_CLASSIFY,20,104,100,14,0,
+                    WS_EX_CLIENTEDGE
+    PUSHBUTTON      "Decrease",IDC_DECREASE,20,319,35,12,0,WS_EX_CLIENTEDGE | 
+                    WS_EX_STATICEDGE
+    PUSHBUTTON      "Increase",IDC_INCREASE,90,319,35,12,0,WS_EX_CLIENTEDGE | 
+                    WS_EX_STATICEDGE
+    EDITTEXT        IDC_TRANUMBER,60,319,25,12,ES_AUTOHSCROLL | ES_NUMBER,
+                    WS_EX_CLIENTEDGE
+    DEFPUSHBUTTON   "Debug_Primary ArcThinning",IDC_ARCPRIMARY,22,279,100,14,
+                    0,WS_EX_CLIENTEDGE
+    DEFPUSHBUTTON   "Debug_Final ArcThinning",IDC_ARCFINAL,22,296,100,14,0,
+                    WS_EX_CLIENTEDGE
+    PUSHBUTTON      "Step-",IDC_STEPDECREASE,20,337,35,12,0,WS_EX_CLIENTEDGE | 
+                    WS_EX_STATICEDGE
+    PUSHBUTTON      "Step+",IDC_STEPINCREASE,90,337,35,12,0,WS_EX_CLIENTEDGE | 
+                    WS_EX_STATICEDGE
+    EDITTEXT        IDC_STEPNUMBER,60,337,25,12,ES_AUTOHSCROLL | ES_NUMBER,
+                    WS_EX_CLIENTEDGE
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_FORM_COMMAND, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 135
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 449
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+#endif    // Chinese (P.R.C.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOG DISCARDABLE  0, 0, 235, 55
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "About Display"
+FONT 8, "MS Sans Serif"
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,11,17,20,20
+    LTEXT           "Display Version 1.0",IDC_STATIC,40,10,119,8,SS_NOPREFIX
+    LTEXT           "Copyright (C) 2003",IDC_STATIC,40,25,119,8
+    DEFPUSHBUTTON   "OK",IDOK,178,7,50,14,WS_GROUP
+END
+
+IDD_CLASSIFY_COLOR DIALOGEX 0, 0, 199, 368
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Color Selection"
+FONT 10, "System", 0, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,145,336,38,10
+    PUSHBUTTON      "Cancel",IDCANCEL,145,351,38,10
+    LTEXT           "Inner Surface Points",IDC_STATIC,37,34,56,15
+    LTEXT           "Isolated Point",IDC_STATIC,37,241,56,8
+    LTEXT           "Edge Points of Surface",IDC_STATIC,37,63,56,15
+    LTEXT           "Junction Point between Arc and Arc",IDC_STATIC,37,205,
+                    56,23
+    LTEXT           "Inner Arc Points",IDC_STATIC,37,154,56,8
+    LTEXT           "Junction Points between Surface and Arc",IDC_STATIC,37,
+                    118,56,23
+    LTEXT           "Junction Points between Surface and Surface",IDC_STATIC,
+                    37,88,56,24
+    LTEXT           "End Point of Arc",IDC_STATIC,37,183,56,8
+    DEFPUSHBUTTON   "Change",IDC_SURFACE_INNER,139,32,30,13,0,
+                    WS_EX_CLIENTEDGE
+    CONTROL         "",IDC_IS,"Static",SS_GRAYFRAME,100,33,21,12
+    DEFPUSHBUTTON   "Change",IDC_SURFACE_EDGE,139,61,30,13,0,
+                    WS_EX_CLIENTEDGE
+    CONTROL         "",IDC_SE,"Static",SS_GRAYFRAME,100,62,21,12
+    DEFPUSHBUTTON   "Change",IDC_SURFACE_SURFACE,139,90,30,13,0,
+                    WS_EX_CLIENTEDGE
+    CONTROL         "",IDC_SS,"Static",SS_GRAYFRAME,100,91,21,12
+    DEFPUSHBUTTON   "Change",IDC_SURFACE_ARC,139,119,30,13,0,
+                    WS_EX_CLIENTEDGE
+    CONTROL         "",IDC_SA,"Static",SS_GRAYFRAME,100,120,21,12
+    DEFPUSHBUTTON   "Change",IDC_ARC_INNER,139,148,30,13,0,WS_EX_CLIENTEDGE
+    CONTROL         "",IDC_AI,"Static",SS_GRAYFRAME,100,149,21,12
+    DEFPUSHBUTTON   "Change",IDC_ARC_END,139,177,30,13,0,WS_EX_CLIENTEDGE
+    CONTROL         "",IDC_AE,"Static",SS_GRAYFRAME,100,178,21,12
+    DEFPUSHBUTTON   "Change",IDC_ARC_ARC,139,206,30,13,0,WS_EX_CLIENTEDGE
+    CONTROL         "",IDC_AA,"Static",SS_GRAYFRAME,100,207,21,12
+    DEFPUSHBUTTON   "Change",IDC_ISOLATED_POINT,139,235,30,13,0,
+                    WS_EX_CLIENTEDGE
+    CONTROL         "",IDC_IP,"Static",SS_GRAYFRAME,100,236,21,12
+    GROUPBOX        "Cubes",IDC_STATIC,20,17,161,239
+    GROUPBOX        "Background",IDC_STATIC,20,300,162,28
+    CONTROL         "",IDC_BK,"Static",SS_GRAYFRAME,101,310,21,12
+    DEFPUSHBUTTON   "Change",IDC_BACKGROUND,140,309,30,13,0,WS_EX_CLIENTEDGE
+    GROUPBOX        "Edges",IDC_STATIC,20,266,162,28
+    CONTROL         "",IDC_EG,"Static",SS_GRAYFRAME,101,276,21,12
+    DEFPUSHBUTTON   "Change",IDC_EDGE,139,276,30,13,0,WS_EX_CLIENTEDGE
+END
+
+IDD_RESOLUTION DIALOGEX 0, 0, 153, 116
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION
+CAPTION "Resolution Selection"
+FONT 10, "System", 0, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,26,98,39,11
+    PUSHBUTTON      "Cancel",IDCANCEL,89,98,39,11
+    LTEXT           "Please enter the resolution",IDC_STATIC,15,14,68,20
+    EDITTEXT        IDC_EDIT1,82,17,27,12,ES_AUTOHSCROLL | ES_NUMBER,
+                    WS_EX_STATICEDGE
+    LTEXT           "um",IDC_STATIC,115,18,15,8
+    EDITTEXT        IDC_EDIT2,82,43,27,12,ES_AUTOHSCROLL | ES_NUMBER,
+                    WS_EX_STATICEDGE
+    LTEXT           "um",IDC_STATIC,115,44,15,8
+    EDITTEXT        IDC_EDIT3,82,69,27,12,ES_AUTOHSCROLL | ES_NUMBER,
+                    WS_EX_STATICEDGE
+    LTEXT           "um",IDC_STATIC,115,70,15,8
+END
+
+IDD_TRABECULAE DIALOG DISCARDABLE  0, 0, 135, 54
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Individual Trabeculae Selection"
+FONT 10, "System"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,15,33,40,14
+    PUSHBUTTON      "Cancel",IDCANCEL,77,33,40,14
+    EDITTEXT        IDC_EDIT1,82,8,33,12,ES_AUTOHSCROLL
+    LTEXT           "Please Input the Trabeculae No.",IDC_STATIC,15,7,56,19
+END
+
+IDD_MORPH DIALOG DISCARDABLE  0, 0, 135, 148
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Morphological Parameters"
+FONT 10, "System"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,16,130,43,11
+    PUSHBUTTON      "Cancel",IDCANCEL,74,130,43,11
+    LTEXT           "",IDC_STATIC_MORPH,16,7,97,120
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 228
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 48
+    END
+
+    IDD_CLASSIFY_COLOR, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 192
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 361
+    END
+
+    IDD_RESOLUTION, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 146
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 109
+    END
+
+    IDD_TRABECULAE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 128
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 47
+    END
+
+    IDD_MORPH, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 128
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 141
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON    DISCARDABLE     "res\\Display.ico"
+IDR_DISPLATYPE          ICON    DISCARDABLE     "res\\DisplayDoc.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDR_MAINFRAME           BITMAP  MOVEABLE PURE   "res\\Toolbar.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Toolbar
+//
+
+IDR_MAINFRAME TOOLBAR DISCARDABLE  16, 16
+BEGIN
+    BUTTON      ID_FILE_NEW
+    BUTTON      ID_FILE_OPEN
+    BUTTON      ID_FILE_SAVE
+    SEPARATOR
+    BUTTON      ID_EDIT_CUT
+    BUTTON      ID_EDIT_COPY
+    BUTTON      ID_EDIT_PASTE
+    SEPARATOR
+    BUTTON      ID_FILE_PRINT
+    SEPARATOR
+    BUTTON      ID_APP_ABOUT
+    SEPARATOR
+    BUTTON      ID_IMAGE_ENLARGE
+    BUTTON      ID_IMAGE_SHRINK
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MAINFRAME MENU PRELOAD DISCARDABLE 
+BEGIN
+    POPUP "&File"
+    BEGIN
+        MENUITEM "&New\tCtrl+N",                ID_FILE_NEW
+        MENUITEM "&Open...\tCtrl+O",            ID_FILE_OPEN
+        MENUITEM "&Save\tCtrl+S",               ID_FILE_SAVE
+        MENUITEM "Save &As...",                 ID_FILE_SAVE_AS
+        MENUITEM SEPARATOR
+        MENUITEM "&Print...\tCtrl+P",           ID_FILE_PRINT
+        MENUITEM "Print Pre&view",              ID_FILE_PRINT_PREVIEW
+        MENUITEM "P&rint Setup...",             ID_FILE_PRINT_SETUP
+        MENUITEM SEPARATOR
+        MENUITEM "E&xit",                       ID_APP_EXIT
+    END
+    POPUP "&Edit"
+    BEGIN
+        MENUITEM "&Undo\tCtrl+Z",               ID_EDIT_UNDO
+        MENUITEM SEPARATOR
+        MENUITEM "Cu&t\tCtrl+X",                ID_EDIT_CUT
+        MENUITEM "&Copy\tCtrl+C",               ID_EDIT_COPY
+        MENUITEM "&Paste\tCtrl+V",              ID_EDIT_PASTE
+    END
+    POPUP "&View"
+    BEGIN
+        MENUITEM "&Toolbar",                    ID_VIEW_TOOLBAR
+        MENUITEM "&Status Bar",                 ID_VIEW_STATUS_BAR
+        MENUITEM "S&plit",                      ID_WINDOW_SPLIT
+    END
+    POPUP "&Image"
+    BEGIN
+        MENUITEM "Smooth",                      ID_IMAGE_SMOOTH, CHECKED
+        MENUITEM "Cull_Front",                  ID_IMAGE_CULL, CHECKED
+        MENUITEM "Color Selection",             ID_IMAGE_COLOR
+        MENUITEM SEPARATOR
+        MENUITEM "Zomm+",                       ID_IMAGE_ENLARGE
+        MENUITEM "Zoom-",                       ID_IMAGE_SHRINK
+    END
+    POPUP "&Tool"
+    BEGIN
+        MENUITEM "Individual Trabeuculae",      ID_TOOL_TRASEP
+        MENUITEM "Parameter Output",            ID_TOOL_PARAMETER
+        MENUITEM "Morphological Parmaeter",     ID_TOOL_MORPH
+        MENUITEM "Save Binary Data",            ID_TOOL_SAVEBINARY
+        MENUITEM "Load Berkeley Data",          ID_TOOL_BKLDATA
+        MENUITEM "Strain/Stress Output",        ID_TOOL_STRESS
+        MENUITEM "Load Bone Remodeling Data",   ID_TOOL_BINARY
+        MENUITEM "Plate Fraction Calculation",  ID_TOOL_PFCAL
+        MENUITEM "Batch Processing Data",       IDC_TOOL_MULTISELECT
+        MENUITEM "Mesh",                        IDC_TOOL_MESH
+    END
+    POPUP "&Help"
+    BEGIN
+        MENUITEM "&About Display...",           ID_APP_ABOUT
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Accelerator
+//
+
+IDR_MAINFRAME ACCELERATORS PRELOAD MOVEABLE PURE 
+BEGIN
+    "N",            ID_FILE_NEW,            VIRTKEY, CONTROL
+    "O",            ID_FILE_OPEN,           VIRTKEY, CONTROL
+    "S",            ID_FILE_SAVE,           VIRTKEY, CONTROL
+    "P",            ID_FILE_PRINT,          VIRTKEY, CONTROL
+    "Z",            ID_EDIT_UNDO,           VIRTKEY, CONTROL
+    "X",            ID_EDIT_CUT,            VIRTKEY, CONTROL
+    "C",            ID_EDIT_COPY,           VIRTKEY, CONTROL
+    "V",            ID_EDIT_PASTE,          VIRTKEY, CONTROL
+    VK_BACK,        ID_EDIT_UNDO,           VIRTKEY, ALT
+    VK_DELETE,      ID_EDIT_CUT,            VIRTKEY, SHIFT
+    VK_INSERT,      ID_EDIT_COPY,           VIRTKEY, CONTROL
+    VK_INSERT,      ID_EDIT_PASTE,          VIRTKEY, SHIFT
+    VK_F6,          ID_NEXT_PANE,           VIRTKEY 
+    VK_F6,          ID_PREV_PANE,           VIRTKEY, SHIFT
+END
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904b0"
+        BEGIN
+            VALUE "Comments", "\0"
+            VALUE "CompanyName", "\0"
+            VALUE "FileDescription", "Display MFC Application\0"
+            VALUE "FileVersion", "1, 0, 0, 1\0"
+            VALUE "InternalName", "Display\0"
+            VALUE "LegalCopyright", "Copyright (C) 2003\0"
+            VALUE "LegalTrademarks", "\0"
+            VALUE "OriginalFilename", "Display.EXE\0"
+            VALUE "PrivateBuild", "\0"
+            VALUE "ProductName", "Display Application\0"
+            VALUE "ProductVersion", "1, 0, 0, 1\0"
+            VALUE "SpecialBuild", "\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE PRELOAD DISCARDABLE 
+BEGIN
+    IDR_MAINFRAME           "Display\n\nDispla\n\n\nDisplay.Document\nDispla Document"
+END
+
+STRINGTABLE PRELOAD DISCARDABLE 
+BEGIN
+    AFX_IDS_APP_TITLE       "Display"
+    AFX_IDS_IDLEMESSAGE     "Ready"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_INDICATOR_EXT        "EXT"
+    ID_INDICATOR_CAPS       "CAP"
+    ID_INDICATOR_NUM        "NUM"
+    ID_INDICATOR_SCRL       "SCRL"
+    ID_INDICATOR_OVR        "OVR"
+    ID_INDICATOR_REC        "REC"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_FILE_NEW             "Create a new document\nNew"
+    ID_FILE_OPEN            "Open an existing document\nOpen"
+    ID_FILE_CLOSE           "Close the active document\nClose"
+    ID_FILE_SAVE            "Save the active document\nSave"
+    ID_FILE_SAVE_AS         "Save the active document with a new name\nSave As"
+    ID_FILE_PAGE_SETUP      "Change the printing options\nPage Setup"
+    ID_FILE_PRINT_SETUP     "Change the printer and printing options\nPrint Setup"
+    ID_FILE_PRINT           "Print the active document\nPrint"
+    ID_FILE_PRINT_PREVIEW   "Display full pages\nPrint Preview"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_APP_ABOUT            "Display program information, version number and copyright\nAbout"
+    ID_APP_EXIT             "Quit the application; prompts to save documents\nExit"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_FILE_MRU_FILE1       "Open this document"
+    ID_FILE_MRU_FILE2       "Open this document"
+    ID_FILE_MRU_FILE3       "Open this document"
+    ID_FILE_MRU_FILE4       "Open this document"
+    ID_FILE_MRU_FILE5       "Open this document"
+    ID_FILE_MRU_FILE6       "Open this document"
+    ID_FILE_MRU_FILE7       "Open this document"
+    ID_FILE_MRU_FILE8       "Open this document"
+    ID_FILE_MRU_FILE9       "Open this document"
+    ID_FILE_MRU_FILE10      "Open this document"
+    ID_FILE_MRU_FILE11      "Open this document"
+    ID_FILE_MRU_FILE12      "Open this document"
+    ID_FILE_MRU_FILE13      "Open this document"
+    ID_FILE_MRU_FILE14      "Open this document"
+    ID_FILE_MRU_FILE15      "Open this document"
+    ID_FILE_MRU_FILE16      "Open this document"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_NEXT_PANE            "Switch to the next window pane\nNext Pane"
+    ID_PREV_PANE            "Switch back to the previous window pane\nPrevious Pane"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_WINDOW_SPLIT         "Split the active window into panes\nSplit"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_EDIT_CLEAR           "Erase the selection\nErase"
+    ID_EDIT_CLEAR_ALL       "Erase everything\nErase All"
+    ID_EDIT_COPY            "Copy the selection and put it on the Clipboard\nCopy"
+    ID_EDIT_CUT             "Cut the selection and put it on the Clipboard\nCut"
+    ID_EDIT_FIND            "Find the specified text\nFind"
+    ID_EDIT_PASTE           "Insert Clipboard contents\nPaste"
+    ID_EDIT_REPEAT          "Repeat the last action\nRepeat"
+    ID_EDIT_REPLACE         "Replace specific text with different text\nReplace"
+    ID_EDIT_SELECT_ALL      "Select the entire document\nSelect All"
+    ID_EDIT_UNDO            "Undo the last action\nUndo"
+    ID_EDIT_REDO            "Redo the previously undone action\nRedo"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_VIEW_TOOLBAR         "Show or hide the toolbar\nToggle ToolBar"
+    ID_VIEW_STATUS_BAR      "Show or hide the status bar\nToggle StatusBar"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    AFX_IDS_SCSIZE          "Change the window size"
+    AFX_IDS_SCMOVE          "Change the window position"
+    AFX_IDS_SCMINIMIZE      "Reduce the window to an icon"
+    AFX_IDS_SCMAXIMIZE      "Enlarge the window to full size"
+    AFX_IDS_SCNEXTWINDOW    "Switch to the next document window"
+    AFX_IDS_SCPREVWINDOW    "Switch to the previous document window"
+    AFX_IDS_SCCLOSE         "Close the active window and prompts to save the documents"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    AFX_IDS_SCRESTORE       "Restore the window to normal size"
+    AFX_IDS_SCTASKLIST      "Activate Task List"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    AFX_IDS_PREVIEW_CLOSE   "Close print preview mode\nCancel Preview"
+END
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE 9, 1
+#pragma code_page(1252)
+#endif //_WIN32
+#include "res\Display.rc2"  // non-Microsoft Visual C++ edited resources
+#include "afxres.rc"         // Standard components
+#include "afxprint.rc"       // printing/print preview resources
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

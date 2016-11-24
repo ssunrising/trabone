@@ -1,0 +1,1 @@
+void Initial_Type(int ***matrix, int ***temp, int ***type, int i, int j, int k);
