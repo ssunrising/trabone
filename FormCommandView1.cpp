@@ -468,9 +468,11 @@ void CFormCommandView::OnLoad()
 //	m_file.Read(&m_char, 1);
 //	m_iSize[2] = (int)m_char+256*m_iSize[2];*/
 
-	m_iSize[0] = 70;
-	m_iSize[1] = 70;
-	m_iSize[2] = 70;
+	m_iSize[0] = 52;
+	m_iSize[1] = 51;
+	m_iSize[2] = 23;
+
+	m_data = std::vector<std::vector<std::vector<int> > >(52 + 4, std::vector<std::vector<int> >(51 + 4, std::vector<int>(23 + 4)));
 
 	m_iMatrix = (int ***)calloc(m_iSize[0]+4, sizeof(int**));
 	for(i=0; i<m_iSize[0]+4; i++)
@@ -495,6 +497,7 @@ void CFormCommandView::OnLoad()
 			{
 				m_file.Read(&m_char,1);
 				m_iMatrix[i][j][k] = (int)m_char;
+				m_data[i][j][k] = (int)m_char;
 				if(m_iMatrix[i][j][k]>0)
 					m_iMatrix[i][j][k] = m_iMatrix[i][j][k];
 //				m_file.Read(&m_char,1);

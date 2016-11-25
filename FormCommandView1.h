@@ -10,6 +10,8 @@
 /////////////////////////////////////////////////////////////////////////////
 // CFormCommandView form view
 
+#include <vector>
+
 #ifndef __AFXEXT_H__
 #include <afxext.h>
 #endif
@@ -43,6 +45,10 @@ public:
 	float m_resolution[3];
 	int m_iTraSelect;
 	int m_iStepSelect;
+
+	// for debugging only
+	std::vector<std::vector<std::vector<int> > > m_data;
+
 
 	//save [0]the total number in the cluster [1]the voxel type: plate-1, rod-2 
 	//[2]temporary use for labeling, then store the total number in the clustered arc-skeleton, 
