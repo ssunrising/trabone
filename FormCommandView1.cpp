@@ -72,7 +72,7 @@ CFormCommandView::CFormCommandView()
 		m_bMesh = FALSE;
 		m_strSize = _T("");
 		m_strDisp = _T("");
-		m_strDisp = _T("");
+		m_strDebug = _T("");
 		m_iTraSelect = 1;
 		m_iStepSelect = 0;
 		m_fBVF = 0;		//BV/TV
